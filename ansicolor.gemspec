@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary = %q{ANSI color support for Java/JRuby on Windows.}
   s.email = %q{aslak.hellesoy@gmail.com}
   s.has_rdoc = false
-  s.files = ["lib/ansicolor.rb", "lib/ansicolor-1.0.jar"]
+  s.files = ["lib/ansicolor.rb", "lib/ansicolor-1.0.jar", "History.txt"]
   s.homepage = %q{http://wiki.github.com/aslakhellesoy/ansicolor}
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.8.4")
