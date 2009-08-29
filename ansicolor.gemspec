@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Aslak Hellesøy"]
-  s.date = %q{2009-03-26}
+  s.date = %q{2009-08-29}
   s.description = %q{ANSI color support for Java/JRuby on Windows.}
   s.summary = %q{ANSI color support for Java/JRuby on Windows.}
   s.email = %q{aslak.hellesoy@gmail.com}
