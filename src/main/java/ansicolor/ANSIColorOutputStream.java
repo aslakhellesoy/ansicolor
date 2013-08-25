@@ -17,13 +17,13 @@ public class ANSIColorOutputStream extends FilterOutputStream implements ANSICol
     private int[] colors = new int[COLOR_BUFFER_LENGTH];
 
     public static PrintStream ansifyStdout() {
-        PrintStream ansiOut = new PrintStream(new ANSIColorOutputStream(System.out));
+        PrintStream ansiOut = new PrintStream(new ANSIColorOutputStream(System.out), true);
         System.setOut(ansiOut);
         return ansiOut;
     }
 
     public static PrintStream debugifyStdout() {
-        PrintStream debugOut = new PrintStream(new ANSIColorOutputStream(System.out, new DebugDevice(System.out)));
+        PrintStream debugOut = new PrintStream(new ANSIColorOutputStream(System.out, new DebugDevice(System.out)),true);
         System.setOut(debugOut);
         return debugOut;
     }
