@@ -1,4 +1,6 @@
-== 1.1 (In Git)
+== 1.1 2014-09-29 
+
+Added support for both 32bit or 64bit dll
 
 == 1.0 2009-03-26 (036e118)
 

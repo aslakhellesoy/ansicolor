@@ -27,7 +27,13 @@ class WindowsConsole implements Console {
         try {
             File dll = File.createTempFile("WindowsConsole", ".dll");
             OutputStream dllOut = new BufferedOutputStream(new FileOutputStream(dll));
-            InputStream in = ANSIColorOutputStream.class.getResourceAsStream("/ansicolor/windows/WindowsConsole.dll");
+            String sourceDll;
+            if (System.getProperty("os.arch").equals("x86")) {
+              sourceDll = "/ansicolor/windows/WindowsConsole.dll";
+            } else {
+              sourceDll = "/ansicolor/windows/WindowsConsole64.dll";
+            }
+            InputStream in = ANSIColorOutputStream.class.getResourceAsStream(sourceDll);
             byte[] buf = new byte[1024];
             int len;
             while ((len = in.read(buf)) > 0) {
