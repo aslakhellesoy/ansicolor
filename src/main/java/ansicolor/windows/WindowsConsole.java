@@ -34,7 +34,7 @@ class WindowsConsole implements Console {
             } else {
               sourceDll = "/ansicolor/windows/WindowsConsole64.dll";
             }
-              System.out.println("Console arch is: " + System.getProperty("os.arch") + " loading "+sourceDll);
+              
             InputStream in = ANSIColorOutputStream.class.getResourceAsStream(sourceDll);
             byte[] buf = new byte[1024];
             int len;
